@@ -3,9 +3,12 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:offer/core/constant/app_colors.dart';
 import 'package:offer/core/constant/app_router.dart';
 import 'package:offer/core/constant/app_textstyles.dart';
+import 'package:offer/core/services/shared_storage.dart';
 import 'package:offer/generated/l10n.dart';
 
-void main() {
+void main()async {
+WidgetsFlutterBinding.ensureInitialized();
+await SharedStorage.sharedStorage.initialize();
   runApp(const AppStart());
 }
 
