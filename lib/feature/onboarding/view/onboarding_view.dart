@@ -9,10 +9,7 @@ class OnBoarding extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
-        backgroundColor: const Color.fromARGB(255, 21, 23, 39),
-        body: ScafoldBody(
-
-        ));
+        body: ScafoldBody());
   }
 }
 

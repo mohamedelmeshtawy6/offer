@@ -39,11 +39,8 @@ class ScafoldBody extends StatelessWidget {
                     dotHeight:  10,
                     dotWidth: 10,
                     spacing: 15),
-                controller: BlocProvider.of<OnboardingCubit>(context).pageController,
-                
-                //! an error get when make localization why
-                
-    
+                controller: BlocProvider.of<OnboardingCubit>(context).pageController,             
+                //! an error get when make localization why 
                 count:
                     BlocProvider.of<OnboardingCubit>(context).staticData.length,
               ),

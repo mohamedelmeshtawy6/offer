@@ -56,14 +56,14 @@ class PageViewBuilder extends StatelessWidget {
           const SizedBox(
             height: 30,
           ),
-          if (index ==
-              BlocProvider.of<OnboardingCubit>(context).staticData.length - 1)
+         
+              BlocProvider.of<OnboardingCubit>(context).islastpage(index)?
             CustomButton(
               title: S.of(context).button_get_start,
               fillColor: Colors.white,
               onpress: () => Navigator.of(context)
                   .push(MaterialPageRoute(builder: (context) => const SigninView())),
-            )
+            ):const SizedBox()
         ],
       ),
     );

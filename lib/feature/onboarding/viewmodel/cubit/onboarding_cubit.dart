@@ -1,8 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:meta/meta.dart';
-import 'package:offer/core/constant/app_router.dart';
 import 'package:offer/feature/onboarding/data/model/onboarding_model.dart';
 import 'package:offer/feature/onboarding/data/repo/onboarding_base_repo.dart';
 
@@ -38,11 +36,16 @@ pageController=PageController();
   animatePageviewTransition(int index){
 pageController.animateToPage(index, duration: const Duration(milliseconds: 200), curve: Curves.bounceOut);
 
+  }
+
+  bool islastpage(int index){
+
+if (index==staticData.length-1) {
+  return true;
+}
+ return false;
 
   }
 
-  getStarted(BuildContext context){
-
-    Navigator.of(context).popAndPushNamed(AppRouter.SignView);
-  }
+ 
 }
