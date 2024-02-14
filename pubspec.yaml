@@ -24,6 +24,9 @@ dependencies:
     sdk: flutter
   flutter_bloc: ^8.1.3
   flutter_local_notifications: ^16.3.2
+  flutter_localizations:
+    sdk: flutter
+  flutter_offline: ^3.0.1
   flutter_polyline_points: ^2.0.0
   flutter_svg: ^2.0.9
   fluttericon: ^2.0.0
@@ -47,9 +50,6 @@ dependencies:
   smooth_page_indicator: ^1.1.0
   sqflite: ^2.3.1
   url_launcher: ^6.2.4
-
-  flutter_localizations:
-      sdk: flutter
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -83,7 +83,7 @@ flutter:
       fonts:
         - asset: assets/fonts/Cairo-Regular.ttf
         - asset: assets/fonts/Cairo-Bold.ttf
-      #    style: italic 
+      #    style: italic
     - family: rubik
       fonts:
         - asset: assets/fonts/Cairo-Regular.ttf

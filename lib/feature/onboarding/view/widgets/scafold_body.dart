@@ -26,7 +26,7 @@ class ScafoldBody extends StatelessWidget {
         Expanded(
           child: SizedBox(
             width: double.infinity,
-            child: PageViewBuilder(pageController: BlocProvider.of<OnboardingCubit>(context).pageController),
+            child: PageViewBuilder(),
           ),
         ),
         Align(

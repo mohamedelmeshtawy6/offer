@@ -9,15 +9,15 @@ import 'package:offer/generated/l10n.dart';
 class PageViewBuilder extends StatelessWidget {
   const PageViewBuilder({
     super.key,
-    required this.pageController,
+    
   });
 
-  final PageController pageController;
+  
 
   @override
   Widget build(BuildContext context) {
     return PageView.builder(
-      controller: pageController,
+      controller: BlocProvider.of<OnboardingCubit>(context).pageController,
       onPageChanged: (value) => BlocProvider.of<OnboardingCubit>(context)
           .animatePageviewTransition(value),
       itemCount: BlocProvider.of<OnboardingCubit>(context).staticData.length,
