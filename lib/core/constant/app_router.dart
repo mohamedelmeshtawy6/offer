@@ -1,15 +1,13 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:offer/feature/auth/view/signin_view.dart';
-import 'package:offer/feature/auth/view/signin_view.dart';
-import 'package:offer/feature/auth/view/signin_view.dart';
 import 'package:offer/feature/onboarding/data/repo/onboarding_base_repo_implement.dart';
 import 'package:offer/feature/onboarding/view/onboarding_view.dart';
 import 'package:offer/feature/onboarding/viewmodel/cubit/onboarding_cubit.dart';
 
 abstract class AppRouter {
   static const onBordingView = '/';
-  static const SignView = '/signin';
+  static const signView = '/signin';
 
   static final route = GoRouter(routes: [
     GoRoute(
@@ -22,7 +20,7 @@ abstract class AppRouter {
       },
     ),
     GoRoute(
-      path: "/signin",
+      path: '/signin',
       builder: (context, state) {
         return  const  SigninView();
       },

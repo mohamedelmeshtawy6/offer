@@ -7,21 +7,35 @@ class CustomButton extends StatelessWidget {
     this.onpress,
     this.fillColor,
     required this.title,
+     this.textStyle, 
+     this.sideColor=Colors.black, this.paddinghorizantle=0
+     
   });
 final void Function() ? onpress;
  final Color ?fillColor;
  final String title;
+  final  TextStyle ?textStyle;
+final Color? sideColor;
+final double ?paddinghorizantle; 
   @override
   Widget build(BuildContext context) {
-    return RawMaterialButton(
-      padding: const EdgeInsets.symmetric(horizontal: 50),
-      shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20)),
-      fillColor: fillColor,
-      onPressed: onpress,
-      child:  Text(
-        title,
-        style: AppTextStyles.textStyle16.copyWith(color: Colors.black) ,
+    return Padding(
+      padding:  EdgeInsets.symmetric(horizontal: paddinghorizantle!),
+      child: SizedBox(
+        width: double.infinity,
+        child: RawMaterialButton(
+          
+          textStyle:textStyle?? AppTextStyles.textStyle16.copyWith(color: Colors.black) ,
+          
+          shape: RoundedRectangleBorder(
+          side: BorderSide(color: sideColor!),
+              borderRadius: BorderRadius.circular(20)),
+          fillColor: fillColor,
+          onPressed: onpress,
+          child:  Text(
+            title,
+          ),
+        ),
       ),
     );
   }

@@ -23,7 +23,7 @@ class ScafoldBody extends StatelessWidget {
         const SizedBox(
           height: 50,
         ),
-        Expanded(
+        const Expanded(
           child: SizedBox(
             width: double.infinity,
             child: PageViewBuilder(),
@@ -32,7 +32,7 @@ class ScafoldBody extends StatelessWidget {
         Align(
             alignment: Alignment.bottomCenter,
             child: SmoothPageIndicator(
-
+    
                 effect: const SwapEffect(type: SwapType.yRotation,
                     activeDotColor: Colors.white,
                     dotColor: Colors.black,

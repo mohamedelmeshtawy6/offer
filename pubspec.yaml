@@ -79,16 +79,15 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: cairo
+    - family: reboto
       fonts:
-        - asset: assets/fonts/Cairo-Regular.ttf
-        - asset: assets/fonts/Cairo-Bold.ttf
-      #    style: italic
+        - asset: assets/fonts/Roboto-Light.ttf
+
+          
     - family: rubik
       fonts:
-        - asset: assets/fonts/Cairo-Regular.ttf
         - asset: assets/fonts/Rubik-Italic.ttf
-          weight: 700
+         
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
 flutter_intl:

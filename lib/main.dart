@@ -6,9 +6,9 @@ import 'package:offer/core/constant/app_textstyles.dart';
 import 'package:offer/core/services/shared_storage.dart';
 import 'package:offer/generated/l10n.dart';
 
-void main()async {
-WidgetsFlutterBinding.ensureInitialized();
-await SharedStorage.sharedStorage.initialize();
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await SharedStorage.sharedStorage.initialize();
   runApp(const AppStart());
 }
 
@@ -19,24 +19,32 @@ class AppStart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      locale: const Locale( 'ar'),
-       localizationsDelegates: const[
-                S.delegate,
-                GlobalMaterialLocalizations.delegate,
-                GlobalWidgetsLocalizations.delegate,
-                GlobalCupertinoLocalizations.delegate,
-            ],
-            supportedLocales: S.delegate.supportedLocales,
-      routerConfig: AppRouter.route,
-      debugShowCheckedModeBanner: false,
-      title: 'Food Delivery App',
-      theme:ThemeData(
-             fontFamily: 'rubik',
-             
-          textTheme: const TextTheme( displayLarge:AppTextStyles.textStyle22,displayMedium:AppTextStyles.textStyle20,displaySmall: AppTextStyles.textStyle18 ,bodyLarge: AppTextStyles.textStyle18,bodyMedium: AppTextStyles.textStyle16,bodySmall: AppTextStyles.textStyle14  ),
-          scaffoldBackgroundColor:AppColors.kprimaryColor)
- 
-    );
+        locale: const Locale('en'),
+        localizationsDelegates: const [
+          S.delegate,
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+        supportedLocales: S.delegate.supportedLocales,
+        routerConfig: AppRouter.route,
+        debugShowCheckedModeBanner: false,
+        title: 'Food Delivery App',
+        theme: ThemeData(
+            fontFamily: 'reboto',
+            textTheme: const TextTheme(
+                displaySmall: AppTextStyles.textStyle16,
+                displayMedium: AppTextStyles.textStyle18,
+                displayLarge: AppTextStyles.textStyle20,
+                titleSmall: AppTextStyles.textStyle22 ,
+                titleMedium:  AppTextStyles.textStyle24,
+                titleLarge:  AppTextStyles.textStyle26,
+                labelLarge: AppTextStyles.textbuttonStyle 
+               ),
+               
+               scaffoldBackgroundColor: AppColors.kprimaryColor,
+               brightness: Brightness.dark
+               
+               ));
   }
 }
-
