@@ -23,17 +23,6 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "button_get_start": MessageLookupByLibrary.simpleMessage(" الدخول"),
-        "descr_onboarding1": MessageLookupByLibrary.simpleMessage(
-            "ابحث عن طعامك المفضل واطلبة الان"),
-        "descr_onboarding2": MessageLookupByLibrary.simpleMessage(
-            "كل انواع الاطعمة مجزه بطريقة احترافية"),
-        "descr_onboarding3": MessageLookupByLibrary.simpleMessage(
-            "يمكنك ان تحصل على توصيل سريع لطلبك"),
-        "title_onboarding1":
-            MessageLookupByLibrary.simpleMessage("اطلب طلبك الان"),
-        "title_onboarding2":
-            MessageLookupByLibrary.simpleMessage("مجهز بإتقان"),
-        "title_onboarding3":
-            MessageLookupByLibrary.simpleMessage("التوصيل السريع")
+        "button_login": MessageLookupByLibrary.simpleMessage(" تسجيل دخول")
       };
 }

@@ -1,12 +1,6 @@
 {
-
-    "title_onboarding1":"اطلب طلبك الان",
-    "descr_onboarding1":"ابحث عن طعامك المفضل واطلبة الان",
-    "title_onboarding2":"مجهز بإتقان",
-    "descr_onboarding2":"كل انواع الاطعمة مجزه بطريقة احترافية",
-    "title_onboarding3":"التوصيل السريع",
-    "descr_onboarding3":"يمكنك ان تحصل على توصيل سريع لطلبك",
-    "button_get_start":" الدخول"
+    "button_get_start":" الدخول",
+    "button_login":" تسجيل دخول"
     
     
     

@@ -5,7 +5,7 @@ import 'package:offer/feature/onboarding/data/repo/onboarding_base_repo.dart';
 class OnBoardingBaseRepoImplement implements OnBoardingBaseRepo {
 
   @override
-  List<OnBoardingModel> getOnboardingStaticData() {
+  List<OnBoardingModel> getOnboardingStaticDataen() {
     return [
       OnBoardingModel(
           title: "ORDER YOU FOOD NOW",
@@ -26,4 +26,28 @@ class OnBoardingBaseRepoImplement implements OnBoardingBaseRepo {
      
     ];
   }
+  
+  @override
+  List<OnBoardingModel> getOnboardingStaticDataar() {
+
+ return [
+      OnBoardingModel(
+          title: "اطلب طلبك الان",
+          imagepath: AppAssetsPath.food,
+          description: " ابحث عن طعامك المفضل واطلبة الان "),
+      OnBoardingModel(
+        title: "مجهز بإتقان",
+        imagepath: AppAssetsPath.chefman,
+        description: "كل انواع الاطعمة مجزه بطريقة احترافية",
+      ),
+      OnBoardingModel(
+        title: "التوصيل السريع",
+        imagepath: AppAssetsPath.deliveryman,
+        description: "يمكنك ان تحصل على توصيل سريع لطلبك",
+      ),
+
+    
+     
+    ];
+ }
 }

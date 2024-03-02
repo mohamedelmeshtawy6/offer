@@ -15,5 +15,20 @@ static SharedStorage sharedStorage=SharedStorage._();
 }
 
 
+putlanguage(String lanug)async{
+await _sharedPreferences.setString('lang', lanug);
+}
+  String? getlanguage(){
+return _sharedPreferences.getString('lang');
+}
+
+clearlangu() async{
+
+await _sharedPreferences.clear();
+
+
+}
+
+
 
 }

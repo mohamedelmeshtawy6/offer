@@ -18,14 +18,18 @@ for my understand that because
 2-seperate list from view too
 3-
 */
-  late final List<OnBoardingModel> staticData;
-  late final PageController pageController;
+    List<OnBoardingModel> staticData=[];
+    late final PageController pageController;
 
 
 
 // get our static date from repo to show it in page 
-  void getData(BuildContext context) {
-    staticData = onBoardingBaseRepo.getOnboardingStaticData();
+  void getData({required String locale}) {
+    if(locale=='en') {
+      staticData = onBoardingBaseRepo.getOnboardingStaticDataen();
+    } else if (locale=='ar'){
+        staticData = onBoardingBaseRepo.getOnboardingStaticDataar();
+    }
   }
 
 
