@@ -15,7 +15,7 @@ import 'package:offer/feature/onboarding/viewmodel/cubit/onboarding_cubit.dart';
       builder: (context, state) {
         return   BlocProvider(
           create: (context) => OnboardingCubit(onBoardingBaseRepo: OnBoardingBaseRepoImplement())..getData(locale: Intl.getCurrentLocale())..initialzePageViewController(),
-          child:const OnBoarding(),
+          child:const OnBoardingView(),
                             );
       },
     ),

@@ -16,7 +16,7 @@ final double ?paddinghorizantle;
         fillColor: Colors.white,
         suffix: textEditingController!.text.isNotEmpty?supIcon:const SizedBox() ,
         hintText: hintText,
-        hintStyle: TextStyle(color: const Color.fromARGB(255, 53, 52, 52,),fontSize: 18),
+        hintStyle: const TextStyle(color: Color.fromARGB(255, 53, 52, 52,),fontSize: 18),
         border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(25),
         borderSide: const BorderSide(strokeAlign: 2, width: 2, color: Colors.black))),

@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import 'package:offer/core/constant/app_textstyles.dart';
 import 'package:offer/feature/auth/viewmodel/cubit/singin_cubit.dart';
-import 'package:offer/generated/l10n.dart';
 
 class DropDownButtonWidget extends StatefulWidget {
   const DropDownButtonWidget({super.key});

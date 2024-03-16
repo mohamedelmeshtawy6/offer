@@ -6,7 +6,7 @@ import 'package:offer/feature/auth/view/widget/dropdownbutton.dart';
 import 'package:offer/generated/l10n.dart';
 
 class SignInBody extends StatefulWidget {
-  SignInBody({super.key});
+  const SignInBody({super.key});
 
   @override
   State<SignInBody> createState() => _SignInBodyState();
@@ -32,7 +32,7 @@ class _SignInBodyState extends State<SignInBody> {
         CustomTextField(
           paddinghorizantle: 10,
           textEditingController: textEditingController,
-          hintText: 'mobile number or email',
+          hintText: 'mobilee number or email',
           supIcon: IconButton(icon: const Icon(Icons.close), onPressed: () {}),
         ),
         const SizedBox(height: 20),

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:intl/intl.dart';
 import 'package:offer/core/constant/app_colors.dart';
 import 'package:offer/core/constant/app_router.dart';
 import 'package:offer/core/constant/app_textstyles.dart';
@@ -27,10 +26,11 @@ class AppStart extends StatelessWidget {
     return BlocProvider(
       create: (context) => SinginCubit(),
       child: BlocBuilder<SinginCubit, SinginState>(
-        builder: (context, state) {
+        builder: (  context, state) {
           return MaterialApp.router(
+            title: 'Offer',
             locale:  state is LangChangedProcess?Locale(state.lang) : lanuage==null?null:Locale(lanuage),
-
+              
               localizationsDelegates: const [
                 S.delegate,
                 GlobalMaterialLocalizations.delegate,
@@ -40,7 +40,7 @@ class AppStart extends StatelessWidget {
               supportedLocales: S.delegate.supportedLocales,
               routerConfig: AppRouter.route,
               debugShowCheckedModeBanner: false,
-              title: 'Food Delivery App',
+             
               theme: ThemeData(
                   fontFamily: 'reboto',
                   textTheme: const TextTheme(
